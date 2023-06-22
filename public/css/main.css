@@ -1,0 +1,166 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+
+*{
+    font-size: 12px;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+
+.container-main{
+    background-color: #ebebeb;
+}
+
+
+.main-products{
+    display: flex; 
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ebebeb;
+}
+
+.separador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.producto{
+    margin: 10px;
+    background-color: white; 
+    width: 90%;
+}
+
+.container-img{
+    display: flex;
+    justify-content: center;
+}
+main  article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+.img-compra{
+    width: 200px;
+    max-width: 100%;
+}
+
+.titulares{
+    font-size: 24px;
+    color: #666;
+
+}
+
+.container-inarticle{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+
+}
+
+
+
+.truck{
+color: #39b54a;
+margin-bottom: 10px;
+margin-left: 8px;
+
+}
+
+.precios{
+font-size: 18px;
+}
+
+.descuentos{
+color: #39b54a;
+font-size: 16px;
+}
+
+.descripcion{
+display: none;
+}
+
+@media screen and (min-width: 361px){
+
+.main-products{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #ebebeb;
+}
+    
+
+.descripcion{
+    display: flex;
+    color: #666;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.producto{
+    box-shadow: 1px 1px 11px -2px rgba(0,0,0,0.75);
+    width: 200px;
+
+}
+
+.titulares{
+    align-self: flex-start;
+}
+
+
+}
+
+@media screen and (min-width: 769px){
+    .producto{
+        width: 200px;
+        margin: 20px;
+        padding: 10px;
+ 
+    }
+
+    .separador{
+        display: flex;
+        width: 100%;
+
+    }
+
+    .main-products{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titulares{
+        font-size: 24px;
+        color: #666;
+        align-self: flex-start;
+        margin-left: 80px;
+        margin: 10px;
+    }
+
+
+
+
+
+    
+}

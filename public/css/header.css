@@ -1,0 +1,242 @@
+*{
+    font-size: 12px;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-bar, #login-bar {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    margin-bottom: 10px;
+
+}
+
+#banner-container {
+    background-color: #efefef;
+}
+
+#banner{
+    width: 100%;
+}
+#tagline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+
+#cuotas-credito{
+    text-align: center;
+}
+
+.container-logosearchbar{
+    display: flex;
+    padding: 15px;
+
+
+}
+
+
+.container-logosearchbar div #buscador {
+    width: 70%;
+
+}
+
+.search-bar{
+    width: 50%;
+    margin-left: 20px;
+}
+
+#buscador{
+    border: none;
+    height: 30px;
+    margin-top: 5px;
+    border-top-left-radius: 4% ;
+    border-bottom-left-radius: 4% ;
+}
+
+#lupa{
+    border-top-right-radius: 15% ;
+    border-bottom-right-radius: 15%;
+    border: none;
+    height: 30px;
+    width: 20px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+#lupa i{
+    color: #666;
+}
+
+
+.container-logosearchbar .logo-img{
+    width: 50%;
+    margin-left: 10px;
+}
+
+
+.box-menu-hamburguesa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#burger-menu {
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: #1259c3;
+    color: white;
+    font-size: 20px;
+    margin: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+
+  #burger-menu i {
+    line-height: 1;
+    color:white;
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: 361px){
+    .box-menu-hamburguesa{
+        display: none;
+    }
+
+    #nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #nav-bar, #login-bar {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin: 10px;
+    }
+
+    #nav-bar {
+        justify-content: flex-start;
+    }
+
+    #login-bar {
+        justify-content: flex-end;
+
+    }
+
+    #nav-bar .block-1{
+        margin: 4px;
+
+    }
+
+    #login-bar .block-2{
+        margin: 4px;
+
+    }
+
+    .container-search-logo-tagline{
+        display: flex;
+    }
+
+    #tagline{
+        margin-top: 40px;
+    }
+
+    #buscador{
+        height: 20px;
+        border-radius: 0%;
+    }
+
+    #lupa{
+        height: 18px;
+        border: 1px solid;
+        margin-left: 5px;
+        background-color: #ebebeb;
+        border-radius: 0%;
+    }
+
+    .container-logosearchbar{
+        align-items: center;
+    
+    
+    }
+
+  }
+  
+  @media screen and (min-width: 769px){
+
+    .container-logosearchbar{
+        width: 90%;
+    }
+
+    .container-search-logo-tagline{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .container-search-logo-tagline .search-bar{
+        width: 40%;
+        margin-left: 50px;
+    }
+
+    .container-logosearchbar #buscador{
+        width: 50%;
+        margin-left: 40px;
+    }
+    .container-search-logo-tagline #tagline{
+        width: 50%;
+        justify-self: end;
+    }
+
+.container-logosearchbar .logo-img{
+            width: 40%;
+    
+        }
+
+        #nav-bar .block-1{
+            margin: 8px;
+    
+        }
+    
+        #login-bar .block-2{
+            margin: 8px;
+    
+        }
+
+
+ }
+   
+      
+
+
+
+
+
+
+
+
+
+
