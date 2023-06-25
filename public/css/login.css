@@ -1,0 +1,38 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+
+
+.form-login{
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebee;
+    padding: 25px;height: 800px;
+}
+
+.login{
+    width: 60%;
+    height: 40px;
+    border: none;
+    padding: 10px;   
+    margin-bottom: 30px ;
+    border-radius: 5px;
+}
+
+.boton{
+    width: 60%;
+    height: 40px;
+    background-color: #1259c3;
+    border: none;
+    color: white;
+    border-radius: 5px
+}
+
+.boton:hover{
+    background-color: #0022AA;
+
+}
+

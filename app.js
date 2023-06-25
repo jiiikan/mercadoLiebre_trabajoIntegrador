@@ -10,5 +10,5 @@ app.use(express.static(`Public`));
 /*app.use(express.static(path.resolve(__dirname,'../public')))*/
 
 app.get("/", (request, response) => response.sendFile(path.resolve(__dirname, "./views/home.html")));
-app.get("login", (request, response) => response.sendFile(path.resolve(__dirname, "./views/login.html")));
+app.get("/login", (request, response) => response.sendFile(path.resolve(__dirname, "./views/login.html")));
 app.get("/register", (request, response) => response.sendFile(path.resolve(__dirname, "./views/register.html")));

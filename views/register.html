@@ -12,7 +12,7 @@
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     </head>
     <body>
-      <header> 
+ <header> 
         <div class="container-search-logo-tagline">
         <div class="container-logosearchbar">
               <img class="logo-img"  src="/images/logo-mercado-liebre.svg" alt="Logo">
@@ -40,31 +40,32 @@
               </div>
             </section>
         </header>
-      <main>
-      <div id="bloqueGigante">
-        <h1>Registro de Usuario</h1>
+      <main class="main-register">
+      <div id="container-form">
+        
         <form action="" method="" class="form-register">
-          <label class="inscribir">Nombre Completo:</label>
-          <input type="text" class="registro-1" name="nombreCompleto" placeholder="Genaro Rafault" required><br><br>
-          <span class="feedback"></span>
-          <label class="inscribir">Nombre de Usuario:</label>
-          <input type="text" class="registro-1" name="usuario" placeholder="Jiiikan" minlength="7" required><br><br>
-          
+          <div class="separador">
+          <h1 class="inscribir">Registro de Usuario</h1>
+          <input type="text" class="registro-1" name="nombreCompleto" placeholder="Nombre y Apellido" required><br><br>
+
+          <input type="text" class="registro-1" name="usuario" placeholder="Nombre de Usuario" minlength="7" required><br><br>
+
+          <input type="email" class="registro-1" name="usuario" placeholder="Email" required><br><br>  
+
           <label class="inscribir">Fecha de Nacimiento:</label>
-          <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+          <input type="date" class="registro-1" name="fechaNacimiento" required><br><br>
           
-          <label class="inscribir">Domicilio:</label>
-          <input type="text" class="registro-1" name="domicilio" placeholder="Belgrano 950" required><br><br>
+          <input type="text" class="registro-1" name="domicilio" placeholder="Domicilio" required><br><br>
           
-          <label class="inscribir">Perfil de usuario:</label>
-          <select id="preferencia" name="preferencia">
-            <option type="radio" value="compra">Comprador</option>
-            <option type="radio" value="venta">Vendedor</option>
-            <option type="radio" value="ambos">Comprador y Vendedor</option>
-          </select><br><br>
+          <label class="inscribir">Perfil de usuario</label>
+          <div class="container-perfilUs">
+            <input type="radio" value="compra" class="value-perfil">Comprador</input>
+            <input type="radio" value="venta" class="value-perfil">Vendedor</input>
+          </div><br><br>
 
           <label class="inscribir">Intereses:</label><br><br>
-          <input type="checkbox" id="electro" name="categorias" value="electro">
+          <div class="intereses">
+          <input type="checkbox" id="electro" name="categorias" value="electro" >
           <label>Electro</label><br><br>
           
           <input type="checkbox" id="moda" name="categorias" value="moda">
@@ -78,25 +79,27 @@
           
           <input type="checkbox" id="vidasana" name="categorias" value="vidasana">
           <label>Vida sana</label><br><br>
+        </div>
           
-         <div id="cajita"> 
-          <button id="boton">Ingrese una foto de Perfil:</button>
-          <input type="file" name="myfile"/> 
+         <div id="file">  
+          <input type="file" name="myfile" required/> 
         </div> 
           <br><br>
        
-          <label class="inscribir">Contraseña:</label>
-          <input type="password" class="registro-1" name="password" minlength="8" required placeholder="123456789"><br><br>
-    
-          <label class="inscribir">Confirmar Contraseña:</label>
-          <input type="password" class="registro-1" name="confirmPassword" minlength="8" required placeholder="123456789"><br><br>
-          
-          <input type="submit" value="Enviar" class="botones" href="/">
-          <input type="reset" value="Borrar" class="botones">
+          <input type="password" class="registro-1" name="password" minlength="8" required placeholder="Contraseña"><br><br>
+
+          <input type="password" class="registro-1" name="confirmPassword" minlength="8" required placeholder="Confirmar Contraseña"><br><br>
+          <div class="container-botones">
+          <button type="submit" class="botones"  onclick="location.href= '/'">Enviar</button>
+          <button type="reset" class="botones">Borrar</button> </div>
+        </div>
         </form>
       </div>
     </main>
+
+
     <footer>
+      <div class="articles">
       <article class="article-footer">
       <div class="iconos"><i class="fas fa-credit-card icons"></i></div>
        <h3 class="subtitulo-pie">Pagá con tarjeta o en efectivo</h3>
@@ -112,6 +115,7 @@
         <h3 class="subtitulo-pie">Seguridad, de principio a fin</h3>
         <p class="descripcion-pie">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
       </article>
+    </div>
       <article id="copyright-container">
         <p id="copyright">
         Copyright © 1999-2020 MercadoLiebre S.R.L.
